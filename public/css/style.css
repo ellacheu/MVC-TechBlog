@@ -1,0 +1,16 @@
+:root {
+    --Dgreen: #40564D;
+    --olive: #9E9F73;
+
+    --Cream: #E4D1BC;
+    --Mauve:  #A7786E;
+    --DGreen: #40564D;
+
+    --font1: 'Acme', sans-serif;
+    --font3: 'Alegreya', serif;
+    --font2: 'Alegreya Sans', sans-serif;
+}
+
+body {
+    background-color:#9E9F73;
+}

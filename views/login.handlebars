@@ -1,42 +1,91 @@
-<div class="row">
-  <div class="col-md-6">
-    <h2>Login</h2>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../public/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+  </head>
 
-    <form class="form login-form">
-      <div class="form-group">
-        <label for="email-login">email:</label>
-        <input class="form-input" type="text" id="email-login" />
-      </div>
-      <div class="form-group">
-        <label for="password-login">password:</label>
-        <input class="form-input" type="password" id="password-login" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">login</button>
-      </div>
-    </form>
-  </div>
-  <div class="col-md-6">
-    <h2>Signup</h2>
 
-    <form class="form signup-form">
-      <div class="form-group">
-        <label for="name-signup">name:</label>
-        <input class="form-input" type="text" id="name-signup" />
+    <header class="navbar">
+      <section class="navbar-section">
+        <a href="#" class="btn btn-link">Tech Blogger</a>
+      </section>
+      <section class="navbar-center">
+        <!-- centered logo or brand -->
+      </section>
+      <section class="navbar-section">
+        <a href="#" class="btn btn-link">Login</a>
+        <a href="#" class="btn btn-link">Sign Up</a>
+      </section>
+    </header>
+
+
+  <body>
+    
+    <main>
+      <div class="logincontainer columns col-6 col-mx-auto">
+          <div id="login-form"class="column form-horizontal">
+              <h2>Login</h2>
+              <form class="form-horizontal">
+                  <div class="form-group">
+                      <div class="col-3 col-sm-12">
+                          <label class="form-label" for="email">Email</label>
+                      </div>
+                      <div class="col-6 col-sm-12">
+                          <input class="form-input" type="text" id="email-login" placeholder="email">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <div class="col-3 col-sm-12">
+                          <label class="form-label" for="password">Password</label>
+                      </div>
+                      <div class="col-6 col-sm-12">
+                          <input class="form-input" type="text" id="password-login" placeholder="password">
+                      </div>
+                  </div>
+                  <button class="btn btn-primary input-group-btn" type="submit">Submit</button>
+              </form>
+          </div>
+              
+          <div class="divider-vert" data-content="OR"></div>  
+              
+          <div id="signup-form" class="column">
+              <h2>Sign up</h2>
+              <form class="form-horizontal">
+                  <div class="form-group">
+                      <div class="col-3 col-sm-12">
+                          <label class="form-label" for="name">Name</label>
+                      </div>
+                      <div class="col-6 col-sm-12">
+                          <input class="form-input" type="text" id="name-signup" placeholder="name">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <div class="col-3 col-sm-12">
+                          <label class="form-label" for="email">Email</label>
+                      </div>
+                      <div class="col-6 col-sm-12">
+                          <input class="form-input" type="text" id="email-signup" placeholder="email">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <div class="col-3 col-sm-12">
+                          <label class="form-label" for="password">Password</label>
+                      </div>
+                      <div class="col-6 col-sm-12">
+                          <input class="form-input" type="text" id="password-signup" placeholder="password">
+                      </div>
+                  </div>
+                  <button id="signup-btn" class="btn btn-primary input-group-btn" type="submit">Submit</button>
+              </form>
+          </div>
+  
       </div>
-      <div class="form-group">
-        <label for="email-signup">email:</label>
-        <input class="form-input" type="text" id="email-signup" />
-      </div>
-      <div class="form-group">
-        <label for="password-signup">password:</label>
-        <input class="form-input" type="password" id="password-signup" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">signup</button>
-      </div>
-    </form>
-  </div>
-</div>
+              
+  </main>
+  </body>
+
 
 <script src="./js/login.js"></script>
